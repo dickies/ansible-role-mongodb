@@ -62,7 +62,7 @@ mongodb_systemlog_destination: "file"
 mongodb_systemlog_logappend: true                                        # Append to logpath instead of over-writing
 mongodb_systemlog_logrotate: "rename"                                    # Logrotation behavior
 mongodb_systemlog_path: /var/log/mongodb/{{ mongodb_daemon_name }}.log   # Log file to send write to instead of stdout
-mongodb_logrotate: true
+mongodb_logrotate: false
 mongodb_logrotate_options: |
   compress
    copytruncate
